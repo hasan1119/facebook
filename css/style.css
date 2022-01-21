@@ -24,6 +24,8 @@ a {
 }
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   max-width: 100%;
   justify-content: space-between;
@@ -127,7 +129,7 @@ header {
   opacity: 1;
 }
 .menu ul li span {
-  color: #888;
+  color: #999;
   font-size: 30px;
 }
 
@@ -196,7 +198,7 @@ header {
 }
 
 .more i {
-  color: #777;
+  color: #999;
   font-size: 30px;
 }
 
@@ -221,7 +223,6 @@ div.more-left i {
   flex-basis: 360px;
   flex-grow: 0;
   height: 100vh;
-  background: #000;
 }
 
 .middle_section {
@@ -231,4 +232,158 @@ div.more-left i {
   min-width: 500px;
   padding: 0 32px;
   box-sizing: content-box;
+}
+
+.left_side {
+  padding: 20px;
+  height: 100vh;
+  overflow: auto;
+}
+
+.left_side ul li {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.2s;
+  padding: 5px;
+  border-radius: 10px;
+}
+.left_side ul li:hover {
+  background-color: #3a3b3c;
+}
+.left_side ul li a {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+.left_side ul li a img {
+  margin-right: 10px;
+}
+.left_side ul li:first-child img {
+  height: 28px;
+  width: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.left_side ul li img {
+  height: 28px;
+  width: 28px;
+}
+.see_more div {
+  height: 28px;
+  width: 28px;
+  background-color: #5c5d5e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.see_more {
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.see_more div span {
+  color: white;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #3a3b3c;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.shortcuts {
+  width: 100%;
+}
+.shortcuts .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.shortcuts .title h4 {
+  color: #b0b3b8;
+  font-weight: 600;
+  margin-left: 5px;
+  padding: 5px 0;
+}
+.shortcuts .title button {
+  background: transparent;
+  color: #4599ff;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-style: 14px;
+  display: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.shortcuts .title:hover button {
+  display: block;
+}
+
+.shortcuts .title:hover button:hover {
+  background-color: #5c5d5e;
+  cursor: pointer;
+}
+
+.shortcuts ul li a img {
+  border-radius: 5px;
+}
+
+/* scrollbar  */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+.left_side:hover::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  background-color: #777;
+  border-radius: 25px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #888; */
+  background-color: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 25px;
+}
+/* scrollbar  */
+
+.footer_text a {
+  color: #b0b3b8;
+  font-weight: normal;
+  line-height: 15px;
+  font-size: 12px;
+  display: inline-block;
+}
+.footer_text a span {
+  font-size: 20px;
+  transform: translateY(20%);
+}
+.footer_text li {
+  display: unset !important;
+  width: unset;
 }
