@@ -209,3 +209,26 @@ div.more-left {
 div.more-left i {
   color: #777 !important;
 }
+
+/* header end */
+.main_container {
+  max-width: 1464px;
+  margin: auto;
+  display: flex;
+}
+.left_side,
+.right_side {
+  flex-basis: 360px;
+  flex-grow: 0;
+  height: 100vh;
+  background: #000;
+}
+
+.middle_section {
+  flex-grow: 1;
+  height: 100vh;
+  background-color: turquoise;
+  min-width: 500px;
+  padding: 0 32px;
+  box-sizing: content-box;
+}

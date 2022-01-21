@@ -31,8 +31,22 @@
   .menu ul li {
     padding: 0 25px !important;
   }
+  /* header end */
+
+  .left_side {
+    display: none;
+  }
 }
 
+/* ===================================================== */
+
+@media screen and (max-width: 900px) {
+  .right_side {
+    display: none;
+  }
+}
+
+/* ====================================================== */
 @media screen and (max-width: 768px) {
   .menu {
     display: none !important;
@@ -40,4 +54,6 @@
   div.more-left {
     display: flex !important;
   }
+
+  /* header end */
 }
