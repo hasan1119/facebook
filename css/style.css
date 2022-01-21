@@ -343,7 +343,9 @@ div.more-left i {
 .shortcuts ul li a img {
   border-radius: 5px;
 }
-
+.shortcuts ul li {
+  margin: 4px 0;
+}
 /* scrollbar  */
 /* width */
 ::-webkit-scrollbar {
