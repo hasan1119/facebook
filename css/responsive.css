@@ -55,5 +55,13 @@
     display: flex !important;
   }
 
+  .middle_section {
+    min-width: unset !important;
+    background-color: turquoise;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    padding: 0 15px;
+  }
+
   /* header end */
 }
