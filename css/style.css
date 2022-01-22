@@ -24,10 +24,12 @@ a {
 }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 1000;
   display: flex;
   max-width: 100%;
+  width: 100%;
   justify-content: space-between;
   background: #242526;
   height: 56px;
@@ -220,9 +222,11 @@ div.more-left i {
 }
 .left_side,
 .right_side {
-  flex-basis: 360px;
+  flex-basis: 330px;
   flex-grow: 0;
   height: 100vh;
+  flex-shrink: 0;
+  padding-top: 75px !important;
 }
 
 .middle_section {
@@ -232,6 +236,7 @@ div.more-left i {
   min-width: 500px;
   padding: 0 32px;
   box-sizing: content-box;
+  overflow: auto;
 }
 
 .left_side {
@@ -352,6 +357,10 @@ div.more-left i {
   width: 8px;
 }
 .left_side:hover::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-radius: 25px;
+}
+.right_side:hover::-webkit-scrollbar-thumb {
   /* background: #888; */
   background-color: #777;
   border-radius: 25px;
@@ -388,4 +397,202 @@ div.more-left i {
 .footer_text li {
   display: unset !important;
   width: unset;
+}
+.right_side {
+  padding: 20px;
+  flex-basis: 330px;
+  overflow: auto;
+}
+.birth_day {
+  background: #242526;
+  padding: 12px;
+  border-radius: 8px;
+}
+.birth_day .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.birth_day .top h4 {
+  display: flex;
+  align-items: center;
+  color: #e4e6eb;
+  font-weight: 500;
+  font-size: 14px;
+}
+.birth_day .top h4 img {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.birth_day .top button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.birth_day .top button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.birth_day .top button:hover {
+  background-color: #3a3b3c;
+}
+.birth_day .top button i {
+  color: white;
+  font-size: 15px;
+}
+
+.birth_day .bottom a {
+  color: #c7c7c7;
+  font-weight: 400;
+}
+
+.separator-right {
+  margin: 10px 0;
+}
+
+.sponsored h4 {
+  color: #b0b3b8;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.sponsor_box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.sponsor_box:hover {
+  background: #242526;
+  cursor: pointer;
+}
+.sponsor_img {
+  width: 135px;
+}
+.sponsor_img img {
+  border-radius: 8px;
+  width: 100%;
+}
+
+.sponsor_text {
+  width: 100%;
+  margin-left: 15px;
+}
+.sponsor_text h6 {
+  font-weight: 600;
+  line-height: 19px;
+  font-size: 14px;
+  color: #e4e6eb;
+}
+.sponsor_text small {
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 12px;
+  color: #969393;
+}
+.contacts .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.contacts .top h4 {
+  color: #b0b3b8;
+  font-size: 16px;
+  font-weight: 600;
+}
+.contacts .top ul {
+  display: flex;
+  align-items: center;
+}
+
+.contacts .top ul li {
+  height: 32px;
+  width: 32px;
+  transition: 0.2s;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.contacts .top ul li:hover {
+  background: #3a3b3c;
+}
+.contacts .top ul li span {
+  color: #b8bbbf;
+  font-size: 22px;
+}
+
+.active_contacts ul {
+  width: 100%;
+}
+.active_contacts ul li {
+  display: flex;
+  align-items: center;
+}
+
+.active_contacts ul li {
+  color: #e4e6eb;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.active_contacts ul li:hover {
+  background: #3a3b3c;
+}
+.contact_icon {
+  width: 30px !important;
+  height: 30px !important;
+  margin-right: 10px;
+  position: relative;
+}
+.contact_icon::after {
+  content: "";
+  background: green;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  bottom: 4px;
+  right: 0;
+  position: absolute;
+}
+.contact_icon img {
+  border-radius: 50%;
+  width: 30px;
+  object-fit: cover;
+}
+.group_conversation h4 {
+  color: #b0b3b8;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.create_group {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  background: #3a3b3c;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.create_group span {
+  font-size: 20px;
 }
