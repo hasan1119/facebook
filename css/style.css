@@ -24,6 +24,7 @@ a {
 }
 
 header {
+  display: none;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -232,10 +233,10 @@ div.more-left i {
 .middle_section {
   flex-grow: 1;
   height: 100vh;
-  background-color: turquoise;
   min-width: 500px;
   padding: 0 32px;
-  box-sizing: content-box;
+  overflow: auto;
+  padding-top: 75px;
   overflow: auto;
 }
 
@@ -561,7 +562,7 @@ div.more-left i {
 }
 .contact_icon::after {
   content: "";
-  background: green;
+  background: #31a24c;
   height: 7px;
   width: 7px;
   border-radius: 50%;
@@ -595,4 +596,128 @@ div.more-left i {
 
 .create_group span {
   font-size: 20px;
+}
+
+.story_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+.more_story {
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 42px;
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+  background: #525355;
+  border-radius: 50%;
+}
+.more_story span {
+  font-size: 25px;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+.story {
+  height: 220px;
+  flex-basis: 111px;
+  background: red;
+  margin: 0 4px;
+  overflow: hidden;
+  flex-grow: 1;
+  border-radius: 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.story > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: 0.3s;
+}
+.story:hover .story_img {
+  transform: scale(1.02);
+}
+
+.create_story_bottom {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  height: 24%;
+  width: 100%;
+  bottom: 0px;
+  background: #3a3b3c;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.story_plus {
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #297be5;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #292b2e;
+}
+.story_plus span {
+  font-size: 30px;
+  color: white;
+}
+.create_story_bottom h6 {
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.story_title {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  padding: 0 10px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.story_avater {
+  position: absolute;
+  z-index: 200;
+  top: 10px;
+  left: 10%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #297be5;
+}
+.story_avater img {
+  width: 100%;
+  object-fit: cover;
 }
