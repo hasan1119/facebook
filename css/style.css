@@ -608,7 +608,7 @@ div.more-left i {
 
 .more_story {
   position: absolute;
-  right: -15px;
+  right: -20px;
   top: 50%;
   transform: translateY(-50%);
   height: 42px;
@@ -628,7 +628,6 @@ div.more-left i {
 .story {
   height: 220px;
   flex-basis: 111px;
-  background: red;
   margin: 0 4px;
   overflow: hidden;
   flex-grow: 1;
