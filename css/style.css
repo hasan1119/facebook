@@ -720,3 +720,234 @@ div.more-left i {
   width: 100%;
   object-fit: cover;
 }
+
+.create_post,
+.post,
+.create_room {
+  max-width: 550px;
+  background: #242526;
+  margin: 20px auto;
+  padding: 15px 15px 5px;
+  border-radius: 6px;
+}
+
+.create_post .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.create_post .top .profile {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+.create_post .top .profile img {
+  width: 100%;
+}
+.create_post .top input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding: 10px 13px;
+  background: #3a3b3c;
+  color: #b0b3b8;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 25px;
+  margin-left: 10px;
+}
+.create_post .top input::placeholder {
+  color: #b0b3b8;
+  font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.create_post .bottom ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.create_post .bottom ul li {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #b0b3b8;
+  transition: 0.3s;
+}
+.create_post .bottom ul li:hover {
+  background: #3a3b3c;
+  cursor: pointer;
+}
+
+.create_post .bottom ul li span {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.create_post .bottom ul li:nth-child(1) span {
+  color: #f4556f;
+}
+.create_post .bottom ul li:nth-child(2) span {
+  color: #58c472;
+}
+
+.create_post .bottom ul li:nth-child(3) span {
+  color: #f8c03e;
+}
+
+.divider {
+  background: #3a3b3c;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 15px;
+}
+
+.create_room {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.create_room ul {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.create_room ul li {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.create_room ul li::after {
+  width: 12px;
+  height: 12px;
+  content: "";
+  background: #31a24c;
+  position: absolute;
+  right: -2px;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: 300;
+  border: 2px solid #18191a;
+}
+
+.create_room ul li img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.create_room button {
+  display: flex;
+  background: #18191a;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border: 2px solid #5d79e2;
+  border-radius: 25px;
+  color: #4599ff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.create_room button:hover {
+  background: #3a3b3c;
+}
+
+.create_room button img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.more_room {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: #3a3b3c;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.more_room:hover {
+  background: #525355;
+}
+
+.more_room span {
+  font-size: 30px;
+  color: white;
+}
+
+.post_title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.post_title .icon {
+  width: 45px;
+  height: 45px;
+  position: relative;
+}
+
+.post_title .icon::after {
+  width: 12px;
+  height: 12px;
+  content: "";
+  background: #31a24c;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  z-index: 300;
+  border: 2px solid #18191a;
+}
+
+.post_title .icon img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4e6eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.options:hover {
+  background: #3a3b3c;
+}
+
+.post_about {
+  flex: 1;
+  padding: 0 10px;
+}
