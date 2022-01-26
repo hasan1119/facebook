@@ -900,8 +900,11 @@ div.more-left i {
   font-size: 30px;
   color: white;
 }
-
+.post {
+  padding: 15px 0 4px;
+}
 .post_title {
+  padding: 0 15px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -950,4 +953,123 @@ div.more-left i {
 .post_about {
   flex: 1;
   padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.post_about a {
+  text-transform: uppercase;
+  color: white;
+}
+
+.post_about {
+  font-size: 14px;
+  color: #a2a3a5;
+}
+.date {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.share_with {
+  width: 12px;
+  height: 12px;
+}
+.share_with span {
+  font-size: 15px !important;
+}
+
+.post_article p {
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #e4e6eb;
+  letter-spacing: 1px;
+  /* margin-bottom: 5px; */
+}
+
+.post_article a {
+  color: #3982e4;
+}
+.video {
+  margin-top: 15px;
+}
+.video iframe,
+.video img {
+  width: 100%;
+  display: block;
+  min-height: 300px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+.reactions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+.likes {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.likes div {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.likes div img {
+  width: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.likes div img:first-child {
+  transform: translateX(3px);
+}
+
+.comment_share {
+  display: flex;
+  align-items: center;
+}
+
+.comment_share a {
+  color: rgb(173, 173, 173);
+  margin-left: 10px;
+}
+.comment_share a:hover {
+  text-decoration: underline;
+}
+.post .bottom {
+  padding: 0 15px;
+}
+
+.actions ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions ul li {
+  flex: 1;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #b0b3b8;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.actions ul li:hover {
+  background: #3a3b3c;
+  cursor: pointer;
+}
+.actions ul li img {
+  margin-right: 5px;
+}
+
+.bottom .divider {
+  margin: 4px 0;
 }
